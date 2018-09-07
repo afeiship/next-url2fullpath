@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: no-clip;
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  background: #f8f8f8;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+em {
+  font-style: normal;
+}
+
+.lc-2 {
+  /* postcss 会导致这里的一些特性失效，不过，在项目中可以处理掉，加上 postcss的remove:false就可以搞定*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.f12 {
+  font-size: 12px;
+}
+.c-9 {
+  color: #999;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.p10 {
+  padding: 10px;
+}
+.tc {
+  text-align: center;
+}
+
+@import "./components/style.scss";
+
+.hello-react-justify-list-between {
+  .title {
+    text-align: center;
+    padding: 10px 0;
+    background: #eee;
+  }
+  .test-webkit-sassui-justify-list-between {
+    .item {
+      margin-bottom: 10px;
+      background: #fff;
+      img {
+        width: 100%;
+      }
+      width: 48.2%;
+    }
+  }
+
+  .button {
+    border: none;
+    display: block;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    overflow: visible;
+    height: 42px;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 42px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background: #04be02;
+    margin-bottom: 15px;
+    &:active {
+      background: #3cc51f;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
